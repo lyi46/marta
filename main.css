@@ -1,0 +1,108 @@
+body {
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center children horizontally */
+    justify-content: center; /* optional: center vertically if body has extra height */
+}
+
+header {
+    width: 100vw; /* let header span the body's width while centering its contents */
+    text-align: center; /* center header text */
+    position: relative; /* stacking context for absolute layers */
+    background-image: url('static/header.png'); /* header background image */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-height: 220px; /* give the header some height — adjust as needed */
+}
+
+header img {
+    display: block;
+    margin: 0 auto; /* center the logo image */
+    width: auto;
+}
+
+/* Color layers stacked above the background */
+.color-layers {
+    position: absolute;
+    inset: 0; /* top/right/bottom/left: 0 */
+    pointer-events: none; /* decorative only */
+}
+
+.color-layer {
+    position: absolute;
+    transform: translateX(120%);
+    height: auto;
+    opacity: 0; /* start invisible, fade in while sliding */
+    mix-blend-mode: normal; /* can change to multiply/screen for effects */
+    will-change: transform, opacity;
+}
+
+/* animation: slide each color in with staggered delays */
+.color-layer.blue  { z-index: 2; animation: slide-in-blue 700ms cubic-bezier(.22,.9,.31,1) forwards; animation-delay: 0.4s; }
+.color-layer.yellow{ z-index: 3; animation: slide-in-yellow 700ms cubic-bezier(.22,.9,.31,1) forwards; animation-delay: 0.8s; }
+.color-layer.orange{ z-index: 4; animation: slide-in-orange 700ms cubic-bezier(.22,.9,.31,1) forwards; animation-delay: 1.3s; }
+
+/* keyframes: from off-screen (right) + invisible to their final positions + visible */
+@keyframes slide-in-blue {
+    from { transform: translateX(120%); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-yellow {
+    from { transform: translateX(120%); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-orange {
+    from { transform: translateX(120%); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .color-layer {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+
+/* Center inner content inside main and sections */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center sections horizontally */
+}
+
+section {
+    width: 100%;
+    max-width: 900px; /* limit content width so it looks centered */
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+/* Ensure images and other block content inside sections are centered */
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optional: center lists and text inside sections */
+section h2, section p, section ul {
+    text-align: center;
+}
+
+section ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
