@@ -3,137 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marta 2.0</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>MARTA: Connecting Communities - Project Overview</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <header class="hero" style="position: relative;">
-        <!-- header background image (keeps original full-width look) -->
-        <img src="static/header.png" alt="Header image" class="hero-bg" style="width: 100%; display: block;">
 
-        <!-- decorative color images; keep the inline sizes/positions you used so style is preserved -->
-        <img src="static/blue.png" alt="" class="color-layer blue" style="height: 116px; position: absolute; top: 180px; right: 0%;">
-        <img src="static/yellow.png" alt="" class="color-layer yellow" style="height: 116px; position: absolute; top: 296px; right: 0%;">
-        <img src="static/orange.png" alt="" class="color-layer orange" style="height: 116px; position: absolute; top: 412px; right: 0%;">
-
-        <!-- header title sits above the decorative layers -->
-        <h1 class="hero-title" style="position: relative; z-index: 10; margin: 12px 0;">A Better Way to Move Atlanta</h1>
+    <header>
+        <div class="logo-container">
+            <!-- Assuming logo.png is the MARTA logo or project logo -->
+            <img src="static/logo.png" alt="MARTA Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#poster">The Poster</a></li>
+                <li><a href="#about">About the Project</a></li>
+                <li><a href="#context">Context</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Defining the Problem</h2>
-            <p>Atlanta’s rapid population growth has pushed its transportation system to the breaking point. Traffic congestion costs commuters over 100 hours and $1,500 every year, and most major highways—especially around the I-285 perimeter—experience daily gridlock.
-            Despite being the region’s primary public transit system, MARTA has struggled to keep up due to limited coverage, inconsistent service, safety concerns, and negative public perception. Many high-growth counties such as Cobb and Gwinnett lack any MARTA rail service, forcing more residents to rely on single-occupancy vehicles.
-            Unless Atlanta expands and modernizes its transit infrastructure, congestion, pollution, and commuter dissatisfaction will continue to worsen.</p>
-        </section>
-        <section>
-            <h2>Our Solution</h2>
-            <p>Our proposal outlines a multi-phase plan to revitalize and expand MARTA, making it a reliable, safe, and widely accessible alternative to driving.<br>
-            Key components include:</p>
-            <ul>
-                <li>Modernizing MARTA’s Existing Infrastructure</li>
-                <ul>
-                    <li>Reducing delays and cancellations through stronger maintenance protocols</li>
-                    <li>Improving communication between trains, buses, and the MARTA app</li>
-                    <li>Updating stations, escalators, tracks, and rail cars</li>
-                </ul>
-                <li>Strengthening Safety & Shifting Public Perception</li>
-                <ul>
-                    <li>Increasing MARTA Police presence and updated 24/7 surveillance</li>
-                    <li>Deep-cleaning and renovating stations</li>
-                    <li>Launching marketing efforts to rebrand MARTA as safe, dependable, and appealing to all income groups</li>
-                </ul>
-                <li>Expanding Rail & Bus Coverage Across Metro Atlanta</li>
-                <ul>
-                    <li>Extending MARTA into Cobb, Gwinnett, and northern Fulton</li>
-                    <li>Expanding service beyond the I-285 loop</li>
-                    <li>Introducing additional routes between existing lines</li>
-                    <li>Adding new stations along the Beltline for walkability and community access</li>
-                </ul>
-            </ul>
-        </section>
-        <section>
-            <h2>Impact</h2>
-            <p>By implementing our proposal, MARTA can transform into a modern, efficient transit system that meets the needs of Atlanta’s growing population. Expected benefits include:</p>
-            <ul>
-                <li>Reduced traffic congestion and commute times</li>
-                <li>Lower greenhouse gas emissions and improved air quality</li>
-                <li>Increased economic development around new and existing stations</li>
-                <li>Enhanced quality of life through greater mobility options</li>
-                <li>Stronger regional connectivity across metro Atlanta</li>
-            </ul>
-            <p>With strategic investments and community support, MARTA can become the backbone of Atlanta’s transportation network, fostering a more sustainable and accessible city for all residents.</p>
-        </section>
-        <section>
-            <h2>What You Can Do About It</h2>
-            <p>Creating a better transit future for Atlanta requires collaboration across the entire community. Here’s how individuals, policymakers, and partners can contribute:</p>
-            <p>For Residents:</p>
-            <h3>For Residents</h3>
-            <ul>
-                <li>Support local ballots and initiatives that fund infrastructure improvements</li>
-                <li>Use MARTA when possible—ridership helps secure future expansions</li>
-                <li>Share honest feedback to help MARTA prioritize improvements</li>
-            </ul>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connecting Atlanta</h1>
+            <p>Exploring the impact, history, and future of the Metropolitan Atlanta Rapid Transit Authority through visual design and community engagement.</p>
+        </div>
+    </section>
 
-            <h3>For Local Leaders & Stakeholders</h3>
-            <ul>
-                <li>Approve regional partnerships that allow MARTA to expand into new counties</li>
-            </ul>
-
-            <h3>For Local Leaders & Stakeholders</h3>
-            <ul>
-                <li>Approve regional partnerships that allow MARTA to expand into new counties</li>
-                <li>Invest in long-term rail and bus development</li>
-            </ul>
-
-            <h3>For Local Leaders & Stakeholders</h3>
-            <ul>
-                <li>Approve regional partnerships that allow MARTA to expand into new counties</li>
-                <li>Invest in long-term rail and bus development</li>
-                <li>Encourage economic development around MARTA stations (transit-oriented communities)</li>
-            </ul>
-
-            <h3>For Businesses</h3>
-            <ul>
-                <li>Promote MARTA as a commuting option to employees</li>
-                <li>Partner in sponsorships, safety initiatives, or station improvements</li>
-            </ul>
-            <p>A revitalized MARTA depends on a united effort to build a reliable, respected, and accessible public transit system for the entire region.</p>
+    <div class="container">
+        
+        <!-- Poster Section -->
+        <section id="poster" class="poster-section">
+            <h2>Project Poster</h2>
+            <p style="margin-bottom: 1rem; color: #666;">Click the poster to view full details.</p>
+            <div class="poster-container">
+                <img src="static/poster.png" alt="MARTA Project Poster" onclick="window.open(this.src, '_blank')">
+            </div>
         </section>
-        <section>
-            <p>The poster serves as a visual representation of the transformation we hope to inspire—a MARTA that Atlanta residents would be proud to ride.</p>
-            <img src="static/poster.png" alt="Poster Image" style="width: 80%; border-left: 1px solid #222222; border-right: 1px solid #222222; border-bottom: 1px solid #222222;">
-        </section>
-        <section>
-            <h2>References</h2>
-            <p>Atlanta Journal-Constitution (AJC) - MARTA plans smaller budget with focus: cleanliness, safety and reliability. <br>
-            Atlanta metro area population (1950-2025). MacroTrends <br>
-            Doug Monroe, By, & Monroe, D:  Where it all went wrong. Atlanta Magazine. <br>
-            Final report | Gwinnett County. (n.d.). <br>
-            Green, J. (2025, March 5). Why is transit ridership sinking in Atlanta and not other cities?. Urbanize Atlanta. <br> <br>
-            Marta. (n.d.-a). <br>
-            https://itsmarta.com/marta-adopts-balanced-budget-prioritizes.aspx <br>
-            https://itsmarta.com/capitalprojects.aspx <br>
-            https://itsmarta.com/projectsnapshot.aspx <br>
-            https://itsmarta.com/join-the-force.aspx <br>
-            https://itsmarta.com/cex-at-marta.aspx <br>
-            https://itsmarta.com/bod-overview.aspx <br><br>
 
-            Marta Atlanta Summary of Technical Analysis Introduction. (n.d.-a). <br>
-            Plazas, D. (2025, June 10). Marta suffers from problems, both real and perceived, our readers say. ajc. <br>
-            Safe, M. R. (2025, April 2). Atlanta’s traffic congestion: Exploring solutions. Safe Roads USA. <br>
-            Torres, M. (2022, February 26). The failures of Marta. Technique. <br>
-            Westerstahl, M. (2024, June 9). The marta gridlock. 3484 Magazine.</p>
+        <!-- Main Content Area -->
+        <section id="about" class="content-section">
+            
+            <!-- Written Content (Left Column) -->
+            <article class="text-content">
+                <h2>About the Project</h2>
+                <p>
+                    The Metropolitan Atlanta Rapid Transit Authority (MARTA) stands as a cornerstone of Atlanta's urban infrastructure, weaving together the diverse tapestry of neighborhoods, business districts, and cultural hubs that define the city. This project aims to visually and textually explore the significance of MARTA not just as a mode of transportation, but as a vital artery of social and economic connection. Through the lens of our poster and this accompanying digital platform, we delve into the multifaceted role that public transit plays in shaping the identity of a modern metropolis.
+                </p>
+                
+                <h3>Historical Context and Evolution</h3>
+                <p>
+                    Since its inception, MARTA has been a subject of both celebration and complex political discourse. Formed in the early 1970s, the system was envisioned as a futuristic solution to the region's burgeoning traffic woes and a tool for racial and economic integration. The initial construction of the East-West and North-South lines marked a significant engineering feat, tunneling beneath historic streets and bridging vast distances. However, the expansion of the system has often been curtailed by regional funding disputes and suburban resistance, creating a unique patchwork of coverage that reflects the broader socio-political history of Georgia.
+                </p>
+                <p>
+                    Despite these challenges, MARTA has persevered, evolving from a simple bus and rail service into a comprehensive regional authority. The introduction of the Atlanta Streetcar and the expansion of bus routes into Clayton County demonstrate a renewed commitment to accessibility. Our project highlights these milestones, using the visual language of the transit map—lines, nodes, and intersections—to represent the flow of history and the convergence of different community narratives.
+                </p>
+
+                <h3>Design Philosophy and Visual Rhetoric</h3>
+                <p>
+                    The poster embedded above serves as the visual anchor for this project. It employs the iconic "MARTA Blue" and "MARTA Gold" color palette to evoke immediate recognition and trust. The design choices were deliberate: the clean lines mimic the efficiency of the rail system, while the use of negative space suggests the potential for future growth. By integrating archival photographs with modern vector graphics, we aim to bridge the gap between the system's storied past and its technological future.
+                </p>
+                <p>
+                    Furthermore, the typography used in our materials pays homage to the Swiss styling of standard transit signage—functional, bold, and universally accessible. This aesthetic decision is not merely stylistic but rhetorical; it argues for the necessity of clarity and reliability in public services. In an era of information overload, the simplicity of a well-designed transit map offers a comforting sense of direction and purpose.
+                </p>
+
+                <h3>Future Outlook: More Than Just a Ride</h3>
+                <p>
+                    Looking ahead, MARTA is poised for a transformation. With initiatives like Transit-Oriented Development (TOD) transforming station parking lots into vibrant mixed-use communities, the agency is redefining what it means to be a transit provider. It is no longer just about moving people from point A to point B; it is about creating destinations and fostering a sense of place. Our research suggests that these developments are crucial for sustainable urban growth, reducing reliance on automobiles and promoting a greener, more walkable city.
+                </p>
+
+                <h3>Community Impact and Social Equity</h3>
+                <p>
+                    Beyond the steel rails and concrete platforms lies the human element of the transit system. MARTA serves as a critical lifeline for thousands of Atlantans who rely on it for access to employment, healthcare, and education. The system's reach—or lack thereof—can determine economic mobility for entire neighborhoods. Our project examines the concept of "transit equity," analyzing how historical decisions have shaped current service maps and advocating for a future where quality transit is accessible to all, regardless of zip code. By centering the voices of daily riders, we hope to illuminate the vital role public transportation plays in fostering a more just and inclusive society.
+                </p>
+
+                <p>
+                    This webpage serves as an extension of these themes, offering a deeper dive into the data and stories that a single poster cannot capture. By exploring the interactive elements and reading the detailed analysis, viewers are invited to reconsider their relationship with public transit. Whether you are a daily commuter or a casual rider, MARTA is an integral part of the Atlanta experience, a shared space where the city comes together.
+                </p>
+            </article>
+
+            <!-- Sidebar (Right Column) -->
+            <aside class="sidebar">
+                
+                <!-- Interactive Fact Widget -->
+                <div class="interactive-card">
+                    <h3>Did You Know?</h3>
+                    <p id="fact-text" style="min-height: 80px; transition: opacity 0.3s;">MARTA is the 8th largest rapid transit system in the United States by ridership.</p>
+                    <button id="new-fact-btn" style="background: var(--marta-gold); border: none; padding: 8px 16px; cursor: pointer; font-weight: bold; margin-top: 10px; width: 100%;">Next Fact</button>
+                </div>
+
+                <!-- Accordion for Additional Info -->
+                <div class="interactive-card" id="context">
+                    <h3>Quick Context</h3>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            System Stats <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Daily Ridership:</strong> ~400,000 (pre-pandemic)</p>
+                            <p><strong>Rail Stations:</strong> 38</p>
+                            <p><strong>Bus Routes:</strong> 100+</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Key Dates <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>1971:</strong> MARTA formed.</p>
+                            <p><strong>1979:</strong> First train runs (East Line).</p>
+                            <p><strong>1996:</strong> System critical for Olympics.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Expansion Plans <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Current projects include the Clifton Corridor, Campbellton Road BRT, and further integration with the BeltLine.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Resources Link -->
+                <div class="interactive-card" id="resources">
+                    <h3>Resources</h3>
+                    <ul style="list-style-position: inside; padding-left: 0;">
+                        <li><a href="https://www.itsmarta.com" target="_blank" style="color: var(--marta-blue);">Official MARTA Website</a></li>
+                        <li><a href="#" style="color: var(--marta-blue);">MARTA Guide</a></li>
+                        <li><a href="#" style="color: var(--marta-blue);">Commuter Resources</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach us at <a href="mailto:lmc@example.com">lmc@example.com</a>.</p>
-        </section>
-    </main>
+
+    </div>
+
     <footer>
-        <p>&copy; 2025</p>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 Student Project. Not officially affiliated with MARTA.</p>
     </footer>
+
+    <script src="static/script.js"></script>
 </body>
 </html>

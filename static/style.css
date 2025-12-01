@@ -1,0 +1,239 @@
+:root {
+    /* MARTA Brand Colors */
+    --marta-blue: #0476B3;
+    --marta-gold: #D5A72B;
+    --marta-red: #CF232D;
+    --marta-green: #009E4A;
+    --marta-dark-grey: #333333;
+    --marta-light-grey: #F4F4F4;
+    --marta-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--marta-dark-grey);
+    background-color: var(--marta-light-grey);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--marta-white);
+    border-bottom: 5px solid var(--marta-gold);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+    height: 60px; /* Adjust based on actual logo size */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--marta-blue);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--marta-gold);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--marta-blue);
+    color: var(--marta-white);
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(4, 118, 179, 0.9), rgba(4, 118, 179, 0.9)), url('static/header.png'); /* Fallback to color if image fails or use image as texture */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Poster Section */
+.poster-section {
+    background-color: var(--marta-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.poster-section h2 {
+    color: var(--marta-blue);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--marta-gold);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.poster-container {
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+
+.poster-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.poster-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Content Section */
+.content-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.text-content {
+    background-color: var(--marta-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.text-content h3 {
+    color: var(--marta-blue);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Sidebar / Interactive */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.interactive-card {
+    background-color: var(--marta-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--marta-red);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.interactive-card h3 {
+    color: var(--marta-dark-grey);
+    margin-bottom: 1rem;
+}
+
+/* Accordion */
+.accordion-item {
+    border-bottom: 1px solid #eee;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    color: var(--marta-blue);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 1rem;
+}
+
+.accordion-content.active {
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--marta-dark-grey);
+    color: var(--marta-white);
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--marta-gold);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
