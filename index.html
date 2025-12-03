@@ -15,19 +15,23 @@
 
     <header>
         <div class="logo-container">
-            <img src="static/logo.png" alt="MARTA Logo">
+            <a href="https://itsmarta.com"><img src="static/logo.png" alt="MARTA Logo"></a>
         </div>
         <nav>
-            <ul>
+            <!-- <ul>
                 <li><a href="#context">The Context</a></li>
                 <li><a href="#vision">The Vision</a></li>
                 <li><a href="#poster">The Poster</a></li>
                 <li><a href="#resources">Resources</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
 
     <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://itsmarta.com/uploadedfiles/Heroes%20broll%20loop.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Connecting Atlanta</h1>
             <p>Reimagining the Metropolitan Atlanta Rapid Transit Authority for a connected, sustainable future.</p>
@@ -39,21 +43,24 @@
         <!-- Section 1: The Context (The Why) -->
         <section id="context" class="full-width">
             <div class="section-header">
-                <h2>The Context</h2>
-                <p class="subtitle">Why MARTA matters now more than ever.</p>
+                <h2>Why MARTA matters now more than ever</h2>
             </div>
+          
 
             <div class="grid-2-col">
                 <div class="text-block">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Atlanta_skyline_from_Jackson_Street_Bridge_2020.jpg"
                         alt="Atlanta Skyline">
+                    <br>
+                    <br>
                     <h3 class="font-bold">A Vital Artery</h3>
                     <p>
+                        
                         For many in Metro Atlanta, MARTA is an important, viable solution for avoiding rush hour,
                         offering cost-effective and efficient transit. Yet, as the city's population booms, MARTA's
                         current decline in service quality is driving new commuters into their cars. This choice
                         directly worsens traffic patterns and increases road congestion.
-                    
+
                     </p>
                     <br>
                     <!-- <p>
@@ -63,7 +70,7 @@
                 </div>
                 <div class="right-column">
                     <div class="stat-box">
-                        <h3>MARTA Statistics</h3>
+                        <h3 class="font-bold">MARTA Statistics</h3>
                         <div class="stat-grid">
                             <div class="stat-item">
                                 <span class="stat-number">8th</span>
@@ -83,13 +90,14 @@
                             </div>
                         </div>
                     </div>
-                    <div style="height: 300px; width: 100%; margin-top: 2rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                    <div
+                        style="height: 300px; width: 100%; margin-top: 2rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                         <canvas id="populationChart"></canvas>
                     </div>
                 </div>
             </div>
 
-            <div class="feature-block" style="margin-top: 3rem;">
+            <!-- <div class="feature-block" style="margin-top: 3rem;">
                 <h3 class="font-bold">Historic Challenges</h3>
                 <p>
                     While MARTA showed promise initially, there has been a recent slow in progress due to lack of
@@ -97,7 +105,7 @@
                     expansion, which leaves many commuters in those counties without viable mass transit solutions. This 
                     forces many more drivers on the roads and increases costs of living all around.
                 </p>
-            </div>
+            </div> -->
         </section>
 
         <!-- Section 2: The Vision (The What) -->
@@ -108,46 +116,53 @@
 
             <div class="card" style="display: flex; align-items: center; gap: 2rem; text-align: left;">
                 <div style="flex: 1;">
-                    <h2 class="font-bold" style="color: #0476B3;">Increasing Traffic</h2> 
+                    <h2 class="font-bold" style="color: #0476B3;">Increasing Traffic</h2>
                     <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
                         The cost of Atlanta's traffic is significant: drivers consume up to 105 hours and $1,500
                         annually just sitting in congestion. Furthermore, as commuters increasingly choose driving over
-                        mass transit, the grave environmental impact from car emissions continues to worsen. 
-                        This will be made worse by Atlanta's ever increasing population, leading to more drivers joining the road every year.
-                        
+                        mass transit, the grave environmental impact from car emissions continues to worsen.
+                        This will be made worse by Atlanta's ever increasing population, leading to more drivers joining
+                        the road every year.
+
                     </p>
-                    
+
                     <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
-                    
-                    </p>
-                </div>
-                <div style="flex: 1;">
-                    <img src="https://itsmarta.com/uploadedImages/More/MARTA_2040_Projects/Capital_Projects/Digital%20Passenger%20Info%20Enhancements.png"
-                        alt="Image"
-                        style="width: 100%; height: auto; border-radius: 8px; background-color: #eee; min-height: 200px;">
-                </div>
-            </div>
-        </p>
-        <br>
-        <p>
-            <div class="card" style="display: flex; align-items: center; gap: 2rem; text-align: left;">
-                <div style="flex: 1;">
-                    <h3 class="font-bold" style="color: #0476B3;">MARTA's current predicament</h3>
-                    <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
-                        As Atlanta's population continues to surge and the strain on our roadways is becoming more
-                        apparent, the demand for efficient transit grows. However, MARTA faces challenges in keeping
-                        pace with this rapid expansion.
-                        
-                    </p>
-                    
-                    <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
-                    MARTA has proven to be inconsistent at times, unsafe and understaffed with many crimes occuring in and around MARTA transit, 
-                    and lacks extended coverage to many areas in need of mass transit. 
+
                     </p>
                 </div>
                 <div style="flex: 1;">
                     <img src="https://offloadmedia.feverup.com/secretatlanta.co/wp-content/uploads/2025/01/30092213/shutterstock_2386336535-1024x685.jpg"
                         alt="Image"
+                        style="width: 100%; height: auto; border-radius: 8px; background-color: #eee; min-height: 200px;">
+                </div>
+            </div>
+            </p>
+            <br>
+            <p>
+            <div class="card" style="display: flex; align-items: center; gap: 2rem; text-align: left;">
+                <div style="flex: 1;">
+                    <h3 class="font-bold" style="color: #0476B3;">MARTA's Current Predicament</h3>
+                    <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
+                        Atlanta’s surging population is straining our roadways, yet MARTA struggles to keep pace. 
+                        Progress has been stalled by funding issues and community resistance to expansion, notably the rejection of service by 
+                        Gwinnett and Cobb counties. 
+                    </p>
+                    <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
+
+                        This lack of viable transit forces more drivers onto congested roads. Furthermore, 
+                        MARTA currently faces operational issues, including inconsistency, safety concerns, understaffing, and insufficient 
+                        coverage for many communities.
+                    </p>
+
+                    <!-- <p style="font-size: 16px; color: black; margin-top: 1rem; margin-bottom: 1rem;">
+                        MARTA as of recent news has proven to be inconsistent at times, unsafe and understaffed with
+                        many crimes occuring in and around MARTA transit,
+                        and lacks extended coverage to many areas in need of mass transit.
+                    </p>  -->
+                </div>
+                <div style="flex: 1;">
+                    <img src="https://itsmarta.com/uploadedImages/More/MARTA_2040_Projects/Capital_Projects/Digital%20Passenger%20Info%20Enhancements.png
+                    " alt="Image"
                         style="width: 100%; height: auto; border-radius: 8px; background-color: #eee; min-height: 200px;">
                 </div>
             </div>
@@ -178,28 +193,57 @@
         <!-- Section 2.5: Priority Projects -->
         <section id="roadmap" class="full-width">
             <div class="section-header">
-                <h2>The Solutions</h2>
+                <h2>Our Solutions</h2>
             </div>
-            <div class="grid-3-col">
-                <div class="card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Northbound_MARTA_Gold_Rail_Line_Train_Arrives_at_Lindbergh_Center_Transit_Station.jpg/800px-Northbound_MARTA_Gold_Rail_Line_Train_Arrives_at_Lindbergh_Center_Transit_Station.jpg"
-                        alt="Lindbergh Center Station">
+            <div class="solutions-container">
+                <div class="solution-section">
+                    <div class="solution-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Northbound_MARTA_Gold_Rail_Line_Train_Arrives_at_Lindbergh_Center_Transit_Station.jpg/800px-Northbound_MARTA_Gold_Rail_Line_Train_Arrives_at_Lindbergh_Center_Transit_Station.jpg"
+                            alt="Lindbergh Center Station">
+                    </div>
+                    <div class="solution-content">
                         <h3 class="font-bold">Infrastructure Overhaul</h3>
                         <p>MARTA will undergo a comprehensive upgrade of its rail and bus systems to streamline operations
-                        and reduce maintenance costs and delays.</p>
+                            and reduce maintenance costs and delays.</p>
+                        <div class="solution-detail">
+                            <p><strong>Detailed Plan:</strong> We are investing in state-of-the-art signaling systems, track replacements, 
+                                and a modernized fleet of rail cars. This overhaul aims to reduce downtime by 40% and improve on-time performance to 98%.
+                                 Additionally, we are implementing predictive maintenance technologies to address issues before they cause delays.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="static/safety.jpg">
-                    <h3 class="font-bold">Safety & Public Image</h3>
-                    <p>We will improve MARTA by focusing on two areas: upgrading security systems and increasing
-                        personnel, and modernizing stations to create a cleaner, more welcoming environment.</p>
+                <div class="solution-section">
+                    <div class="solution-image">
+                        <img src="static/safety.jpg" alt="Safety">
+                    </div>
+                    <div class="solution-content">
+                        <h3 class="font-bold">Safety & Public Image</h3>
+                        <p>We will improve MARTA by focusing on critical areas: upgrading security systems and increasing
+                            personnel, and modernizing stations to create a cleaner, more welcoming environment.</p>
+                        <div class="solution-detail">
+                            <p><strong>Detailed Plan:</strong> Our safety initiative includes the installation of 2,000+ high-definition 
+                                surveillance cameras and improved lighting at all stations. We are also increasing the presence of MARTA 
+                                police and community ambassadors. Station modernization efforts will include deep cleaning programs, new signage, 
+                                and public art installations to enhance the rider experience.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="static/routes.png">
-                    <h3 class="font-bold">Lack of Expansion of Transit</h3>
-                    <p>Strategic MARTA expansion—specifically along the BeltLine and major highway arteries—is projected
-                        to significantly boost ridership, which will consequently alleviate traffic congestion on our
-                        roadways.</p>
+                <div class="solution-section">
+                    <div class="solution-image">
+                        <img src="static/routes.png" alt="Routes">
+                    </div>
+                    <div class="solution-content">
+                        <h3 class="font-bold">Lack of Expansion of Transit</h3>
+                        <p>Strategic MARTA expansion, specifically along the BeltLine and major highway arteries is projected
+                            to significantly boost ridership, which will consequently alleviate traffic congestion on our
+                            roadways.</p>
+                        <div class="solution-detail">
+                            <p><strong>Detailed Plan:</strong> The expansion roadmap prioritizes high-density corridors. 
+                                Key projects include the Loop Line, The Northwest Line, and the Landford, Moreland, and I-75 Busways.
+                                By integrating with the BeltLine via our Loop Line, we aim to create a seamless network that connects neighborhoods to job centers, 
+                                reducing reliance on cars and promoting sustainable urban growth.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
     </div>
@@ -234,39 +278,74 @@
                 <li><a href="#">Transit Equity Reports</a></li>
             </ul>
         </section> -->
-<section class="references">
-        <h2><strong>Works Cited</strong></h2><br>
-        <ul class="works-cited">
-            <li>
-                Atlanta Journal-Constitution (AJC). (n.d.). MARTA plans smaller budget with focus: Cleanliness, safety and reliability. <em>The Atlanta Journal-Constitution</em>. Retrieved from
-                <a href="https://www.ajc.com/news/atlanta-news/marta-plans-smaller-budget-with-focus-cleanliness-safety-and-reliability/J4JZT3GWDJCZZHQIEVUSH35FYA/" target="_blank" rel="noopener noreferrer">https://www.ajc.com/news/atlanta-news/marta-plans-smaller-budget-with-focus-cleanliness-safety-and-reliability/J4JZT3GWDJCZZHQIEVUSH35FYA/</a>
-            </li>
-            <li>
-                MacroTrends. (n.d.). Atlanta metro area population (1950–2025). Retrieved from
-                <a href="https://www.macrotrends.net/global-metrics/cities/22922/atlanta/population" target="_blank" rel="noopener noreferrer">https://www.macrotrends.net/global-metrics/cities/22922/atlanta/population</a>
-            </li>
-            <li>
-                Monroe, D. (2019, March 18). Where it all went wrong. <em>Atlanta Magazine</em>. Retrieved from
-                <a href="https://www.atlantamagazine.com/great-reads/marta-tsplost-transportation/" target="_blank" rel="noopener noreferrer">https://www.atlantamagazine.com/great-reads/marta-tsplost-transportation/</a>
-            </li>
-            <li>
-                Gwinnett County. (n.d.). Final report | Transit Review Committee. Retrieved from
-                <a href="https://www.gwinnettcounty.com/web/gwinnett/departments/transportation/transitreviewcommittee/finalreport" target="_blank" rel="noopener noreferrer">https://www.gwinnettcounty.com/web/gwinnett/departments/transportation/transitreviewcommittee/finalreport</a>
-            </li>
-            <li>
-                Green, J. (2025, March 5). Why is transit ridership sinking in Atlanta and not other cities? <em>Urbanize Atlanta</em>. Retrieved from
-                <a href="https://atlanta.urbanize.city/post/marta-transit-ridership-sinking-atl-and-not-other-cities" target="_blank" rel="noopener noreferrer">https://atlanta.urbanize.city/post/marta-transit-ridership-sinking-atl-and-not-other-cities</a>
-            </li>
-            <li>
-                MARTA. (n.d.). MARTA adopts balanced budget prioritizes cleanliness, safety, reliability. Retrieved from
-                <a href="https://itsmarta.com/marta-adopts-balanced-budget-prioritizes.aspx" target="_blank" rel="noopener noreferrer">https://itsmarta.com/marta-adopts-balanced-budget-prioritizes.aspx</a>
-            </li>
-            <li>
-                MARTA. (n.d.). Capital projects. Retrieved from
-                <a href="https://itsmarta.com/capitalprojects.aspx" target="_blank" rel="noopener noreferrer">https://itsmarta.com/capitalprojects.aspx</a>
-            </li>
-        </ul>
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+        <div class="cta-content">
+            <h2>Take Action Today</h2>
+            <p>Scan the QR code to learn more about how you can support MARTA's expansion and future projects.</p>
+        </div>
+        <div class="cta-qr">
+            <!-- Replace 'static/qrcode.png' with your actual QR code image -->
+            <img src="static/qr.png" alt="Scan QR Code">
+        </div>
     </section>
+    <section class="references">
+        <div class="accordion-item">
+            <button class="accordion-header">
+                <span style="font-size: 1.5rem; font-weight: bold;">Works Cited</span>
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <ul class="works-cited">
+                    <li>
+                        Atlanta Journal-Constitution (AJC). (n.d.). MARTA plans smaller budget with focus: Cleanliness,
+                        safety and reliability. <em>The Atlanta Journal-Constitution</em>. Retrieved from
+                        <a href="https://www.ajc.com/news/atlanta-news/marta-plans-smaller-budget-with-focus-cleanliness-safety-and-reliability/J4JZT3GWDJCZZHQIEVUSH35FYA/"
+                            target="_blank"
+                            rel="noopener noreferrer">https://www.ajc.com/news/atlanta-news/marta-plans-smaller-budget-with-focus-cleanliness-safety-and-reliability/J4JZT3GWDJCZZHQIEVUSH35FYA/</a>
+                    </li>
+                    <li>
+                        MacroTrends. (n.d.). Atlanta metro area population (1950–2025). Retrieved from
+                        <a href="https://www.macrotrends.net/global-metrics/cities/22922/atlanta/population"
+                            target="_blank"
+                            rel="noopener noreferrer">https://www.macrotrends.net/global-metrics/cities/22922/atlanta/population</a>
+                    </li>
+                    <li>
+                        Monroe, D. (2019, March 18). Where it all went wrong. <em>Atlanta Magazine</em>. Retrieved from
+                        <a href="https://www.atlantamagazine.com/great-reads/marta-tsplost-transportation/"
+                            target="_blank"
+                            rel="noopener noreferrer">https://www.atlantamagazine.com/great-reads/marta-tsplost-transportation/</a>
+                    </li>
+                    <li>
+                        Gwinnett County. (n.d.). Final report | Transit Review Committee. Retrieved from
+                        <a href="https://www.gwinnettcounty.com/web/gwinnett/departments/transportation/transitreviewcommittee/finalreport"
+                            target="_blank"
+                            rel="noopener noreferrer">https://www.gwinnettcounty.com/web/gwinnett/departments/transportation/transitreviewcommittee/finalreport</a>
+                    </li>
+                    <li>
+                        Green, J. (2025, March 5). Why is transit ridership sinking in Atlanta and not other cities?
+                        <em>Urbanize Atlanta</em>. Retrieved from
+                        <a href="https://atlanta.urbanize.city/post/marta-transit-ridership-sinking-atl-and-not-other-cities"
+                            target="_blank"
+                            rel="noopener noreferrer">https://atlanta.urbanize.city/post/marta-transit-ridership-sinking-atl-and-not-other-cities</a>
+                    </li>
+                    <li>
+                        MARTA. (n.d.). MARTA adopts balanced budget prioritizes cleanliness, safety, reliability.
+                        Retrieved from
+                        <a href="https://itsmarta.com/marta-adopts-balanced-budget-prioritizes.aspx" target="_blank"
+                            rel="noopener noreferrer">https://itsmarta.com/marta-adopts-balanced-budget-prioritizes.aspx</a>
+                    </li>
+                    <li>
+                        MARTA. (n.d.). Capital projects. Retrieved from
+                        <a href="https://itsmarta.com/capitalprojects.aspx" target="_blank"
+                            rel="noopener noreferrer">https://itsmarta.com/capitalprojects.aspx</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
     </div>
 
     <footer>

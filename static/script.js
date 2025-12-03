@@ -118,4 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+    // Scroll Reveal for Solution Cards
+    // Removed previous observer logic as the new layout is full-screen and always visible
 });
